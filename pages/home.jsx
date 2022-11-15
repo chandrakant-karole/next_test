@@ -4,8 +4,8 @@ export default function home({ data }) {
     return (
         <>
             <section>
-                {data.map(({ title }) => {
-                    return <h1>{title}</h1>
+                {data.map(({ title, id }) => {
+                    return <h1 key={id}>{id} : {title}</h1>
                 })}
             </section>
         </>
